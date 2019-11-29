@@ -1,0 +1,40 @@
+[user]
+        name = Tomas Rosenkvist
+        email = tomas.rosenkvist@zzz.com
+
+[core]
+        editor = emacs
+[color]
+        branch = auto
+        diff = auto
+        interactive = auto
+        status = auto
+[alias]
+        tree = log --graph --pretty=oneline --abbrev-commit --all --decorate
+        stree = log --graph --pretty=oneline --abbrev-commit --decorate
+        last = log -1 HEAD
+
+[pack]
+        threads = 1
+        deltaCacheSize = 128m
+        packSizeLimit = 128m
+        windowMemory = 128m
+[core]
+        packedGitLimit = 128m
+        packedGitWindowSize = 128m
+[diff]
+        tool = meld
+        guitool = meld
+[difftool]
+        prompt = false
+[difftool "meld"]
+          cmd = meld "$LOCAL" "$REMOTE"
+
+[merge]
+        tool = meld
+        guitool = meld
+[mergetool]
+        prompt = false
+
+[http]
+sslVerify = false
